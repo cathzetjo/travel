@@ -1,0 +1,79 @@
+@import "normalize.css";
+@import "fonts.css";
+
+:root {
+    --font-logo: Magra, sans-serif, serif;
+    --font-title: RedHatText, sans-serif, serif;
+    --font-main: Aleo, sans-serif, serif;
+    --font-size-main: 20px;
+    --font-size-label: 16px;
+    --font-size-button: 24px;
+    --font-size-stories-title: 35px;
+    --color-red: #F2785C;
+    --color-geen: #0D606F;
+    --color-white: #F8F8F8;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: 1s;
+}
+
+div, p, h1, h2, h3, nav, ul {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.header {
+    background: url('../assets/img/garrett-parker.jpg');
+    background-repeat: no-repeat;
+    -moz-background-size: 100%;
+    -webkit-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+}
+
+.wrapper-header {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo {
+    color: var(--color-white);
+    font-family: Magra, sans-serif;
+}
+
+.nav-list {
+    display: flex;
+    gap: 42px;
+}
+
+.nav-list a {
+    display: flex;
+    gap: 42px;
+    color: var(--color-white);
+    font-family: RedHatText, sans-serif;
+}
+
+.btn {
+    background-color: var(--color-geen);
+    border-radius: 10px;
+    border-color: transparent;
+    padding: 10px 20px;
+    color: var(--color-white);
+    font-family: RedHatText, sans-serif;
+}
