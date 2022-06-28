@@ -1,5 +1,6 @@
 @import "normalize.css";
 @import "fonts.css";
+@import "scrollbar.css";
 
 :root {
     --font-logo: Magra, sans-serif, serif;
@@ -10,7 +11,7 @@
     --font-size-button: 24px;
     --font-size-stories-title: 35px;
     --color-red: #F2785C;
-    --color-geen: #0D606F;
+    --color-green: #0D606F;
     --color-white: #F8F8F8;
 }
 
@@ -40,18 +41,21 @@ html {
 
 .header {
     position: absolute;
-    width: 99.1vw;
-    background: rgba(242, 120, 92, 0.7);
-    box-shadow: 0 4px 4px rgba(13, 96, 111, 0.5);
+    width: 100%;
+    z-index: 1;
 }
 
 .wrapper-header {
     display: flex;
-    justify-content: space-around;
+    gap: 70px;
     align-items: center;
+    background: rgba(242, 120, 92, 0.7);
+    box-shadow: 0 4px 4px rgba(13, 96, 111, 0.5);
 }
 
 .logo {
+    margin-left: 8.5%;
+    margin-right: 7%;
     display: flex;
     align-items: center;
     color: var(--color-white);
@@ -70,7 +74,7 @@ html {
 }
 
 .logo-svg:hover {
-    background-color: var(--color-geen);
+    background-color: var(--color-green);
 }
 
 .logo-svg {
@@ -85,29 +89,32 @@ html {
 
 .nav {
     padding: 35px 0;
+    margin-right: 9%;
 }
 
 .nav-list {
     display: flex;
-    gap: 42px;
+    gap: 48px;
 }
 
 .nav-list a {
     display: flex;
-    gap: 42px;
     color: var(--color-white);
     font-family: RedHatText, sans-serif;
+    text-transform: capitalize;
 }
 
 .btn {
     width: 228px;
     height: 59px;
-    background-color: var(--color-geen);
+    background-color: var(--color-green);
     border-radius: 10px;
     border-color: transparent;
     color: var(--color-white);
     font-family: RedHatText, sans-serif;
     transition: 1s;
+    font-size: var(--font-size-button);
+    text-transform: capitalize;
 }
 
 .btn:hover {
@@ -118,30 +125,36 @@ html {
 .btn-login {
     width: 103px;
     height: 41px;
+    font-size: var(--font-size-label);
 }
 
 .btn-login:hover {
     background-color: var(--color-white);
-    color: var(--color-geen);
+    color: var(--color-green);
 }
 
+.main {
+    background: rgba(242, 120, 92, 0.3);
+}
 
-section.preview {
-    padding-top: 90px;
+.wrapper-preview  {
+    position: relative;
     background: url('../assets/img/garrett-parker.jpg');
     background-repeat: no-repeat;
     -moz-background-size: 100%;
     -webkit-background-size: 100%;
     -o-background-size: 100%;
     background-size: 100%;
-}
-
-.wrapper-preview {
-    position: relative;
-    padding: 32px 428px 200px 120px;
+    padding-top: 120px;
+    padding-bottom: 254px;
     display: flex;
     flex-direction: column;
-    gap: 46px;
+    gap: 33px;
+}
+
+.wrapper-preview >* {
+    margin-left: 8.3%;
+    margin-right: 30%;
 }
 
 h1 {
@@ -149,25 +162,29 @@ h1 {
     font-family: Aleo, sans-serif;
     align-items: start;
     color: var(--color-white);
+    letter-spacing: 1px;
+    line-height: 1.2;
 }
 
 .preview p {
     color: var(--color-white);
     font-style: italic;
-    font-size: var(--font-size-button);
+    font-size: var(--font-size-main);
     font-family: Aleo, sans-serif;
 }
 
 .preview input {
-    width: 851px;
-    height: 95px;
-    padding-left: 41px;
+    width: 848px;
+    height: 89px;
+    margin-top: 13px;
+    padding-left: 38px;
     background: rgba(255, 255, 255, 0.7);
     border-radius: 16px;
     border-color: transparent;
     color: var(--color-red);
     font-size: var(--font-size-button);
     font-family: Aleo, sans-serif;
+    letter-spacing: -0.7px;
 }
 
 .preview input::placeholder {
@@ -179,8 +196,8 @@ h1 {
 
 .btn-preview {
     position: absolute;
-    top: 266px;
-    left: 740px;
+    bottom: 35.7%;
+    right: 1%;
 }
 
 h2 {
@@ -189,18 +206,20 @@ h2 {
     color: var(--color-red);
     text-transform: uppercase;
     text-align: center;
+    letter-spacing: 0.6px;
 }
 
 .steps {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 85px;
+    padding-bottom: 105px;
     background-color: var(--color-white);
 }
 
 .steps-items {
     display: flex;
-    justify-content: space-between;
-    margin-top: 40px;
+    margin-top: 42px;
+    gap: 18%;
+    margin-left: 9.3%;
 }
 
 .step-item {
@@ -210,10 +229,14 @@ h2 {
     gap: 30px;
 }
 
+.steps-items>.step-item:nth-child(2){
+    margin-right: -5.5%;
+}
+
 .steps-items p {
     font-size: var(--font-size-main);
     font-family: RedHatText, sans-serif;
-    color: var(--color-geen);
+    color: var(--color-green);
 }
 
 .step-img {
@@ -224,13 +247,13 @@ h2 {
     width: 100px;
     height: 100px;
     border-color: transparent;
-    border-radius: 10px;
+    border-radius: 16px;
     transition: 1s;
     cursor: pointer;
 }
 
 .step-img:hover {
-    background-color: var(--color-geen);
+    background-color: var(--color-green);
 }
 
 .step-icon {
