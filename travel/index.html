@@ -4,50 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Portal</title>
-    <link rel="icon" type="image/png" href="./assets/img/logo.png">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 
 <header class="header">
-    <div class="logo">
-        <p>Travel portal</p>
+    <div class="wrapper wrapper-header">
+        <div class="logo">
+            <a href="">
+                <div class="logo-svg"></div>
+            </a>
+            <p>Travel portal</p>
+        </div>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#preview" class="nav-link">How it works</a></li>
+                <li class="nav-item"><a href="#steps" class="nav-link">Plan your trip</a></li>
+                <li class="nav-item"><a href="#destinations" class="nav-link">Destinations</a></li>
+                <li class="nav-item"><a href="#stories" class="nav-link">Travel Stories</a></li>
+            </ul>
+        </nav>
+        <button class="btn btn-login">Login</button>
     </div>
-    <nav class="nav">
-        <ul class="nav-list">
-            <li class="nav-item"><a href="#preview" class="nav-link">How it works</a></li>
-            <li class="nav-item"><a href="#steps" class="nav-link">Plan your trip</a></li>
-            <li class="nav-item"><a href="#destinations" class="nav-link">Destinations</a></li>
-            <li class="nav-item"><a href="#stories" class="nav-link">Travel Stories</a></li>
-        </ul>
-    </nav>
-    <button>Login</button>
 </header>
 
 <main class="main">
     <section class="preview" id="preview">
-        <h1>Explore the beauty of the World</h1>
-        <button>Start planning</button>
+        <div class="wrapper wrapper-preview">
+            <h1>Explore the beauty of the World</h1>
+            <p>Receive personalized recommendations for countries, hotels, activities and more</p>
+            <input type="text" placeholder="What would you like to do?"/>
+            <button class="btn btn-preview">Start planning</button>
+        </div>
     </section>
     <section class="steps" id="steps">
-        <h2>3 steps to the perfect trip</h2>
+        <div class="wrapper wrapper-steps">
+            <h2>3 steps to the perfect trip</h2>
+            <div class="steps-items">
+                <div class="step-item">
+                    <div class="step-img">
+                        <div class="step-icon step-icon-1"></div>
+                    </div>
+                    <p>Tell us what you want to do</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-img">
+                        <div class="step-icon step-icon-2"></div>
+                    </div>
+                    <p>Share us preferable dates</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-img">
+                        <div class="step-icon step-icon-3"></div>
+                    </div>
+                    <p>We will give you recommendations</p>
+                </div>
+            </div>
+        </div>
     </section>
     <section class="destinations" id="destinations">
-        <h2>Popular destinations</h2>
-        <button>Find more</button>
+        <div class="wrapper wrapper-destinations">
+            <h2>Popular destinations</h2>
+            <button class="btn">Find more</button>
+        </div>
     </section>
     <section class="stories" id="stories">
-        <h2>Travel stories</h2>
-        <button>See more</button>
+        <div class="wrapper wrapper-stories">
+            <h2>Travel stories</h2>
+            <button class="btn">See more</button>
+        </div>
     </section>
 </main>
 
 <footer class="footer">
-<p>All rights reserved &copy; Travel portal</p>
-    <div class="social">
-        <div class="instagram"></div>
-        <div class="youtube"></div>
-        <div class="twitter"></div>
+    <div class="wrapper wrapper-footer">
+        <p></p>
+        <p>All rights reserved &copy; Travel portal</p>
+        <div class="social">
+            <div class="instagram"></div>
+            <div class="youtube"></div>
+            <div class="twitter"></div>
+        </div>
     </div>
 </footer>
 
