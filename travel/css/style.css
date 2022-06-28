@@ -39,22 +39,52 @@ html {
 }
 
 .header {
-    background: url('../assets/img/garrett-parker.jpg');
-    background-repeat: no-repeat;
-    -moz-background-size: 100%;
-    -webkit-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
+    position: absolute;
+    width: 99.1vw;
+    background: rgba(242, 120, 92, 0.7);
+    box-shadow: 0 4px 4px rgba(13, 96, 111, 0.5);
 }
 
 .wrapper-header {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .logo {
+    display: flex;
+    align-items: center;
     color: var(--color-white);
     font-family: Magra, sans-serif;
+    gap: 6px;
+    text-transform: capitalize;
+}
+
+.logo-svg {
+    width: 30px;
+    height: 30px;
+    background-color: var(--color-white);
+    -webkit-mask-size: cover;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+.logo-svg:hover {
+    background-color: var(--color-geen);
+}
+
+.logo-svg {
+    -webkit-mask-image: url('../assets/img/logo.svg');
+}
+
+.logo p {
+    font-size: 32px;
+    font-family: var(--font-logo);
+    font-weight: bold;
+}
+
+.nav {
+    padding: 35px 0;
 }
 
 .nav-list {
@@ -70,10 +100,160 @@ html {
 }
 
 .btn {
+    width: 228px;
+    height: 59px;
     background-color: var(--color-geen);
     border-radius: 10px;
     border-color: transparent;
-    padding: 10px 20px;
     color: var(--color-white);
     font-family: RedHatText, sans-serif;
+    transition: 1s;
 }
+
+.btn:hover {
+    cursor: pointer;
+    background-color: var(--color-red);
+}
+
+.btn-login {
+    width: 103px;
+    height: 41px;
+}
+
+.btn-login:hover {
+    background-color: var(--color-white);
+    color: var(--color-geen);
+}
+
+
+section.preview {
+    padding-top: 90px;
+    background: url('../assets/img/garrett-parker.jpg');
+    background-repeat: no-repeat;
+    -moz-background-size: 100%;
+    -webkit-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+}
+
+.wrapper-preview {
+    position: relative;
+    padding: 32px 428px 200px 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 46px;
+}
+
+h1 {
+    font-size: 80px;
+    font-family: Aleo, sans-serif;
+    align-items: start;
+    color: var(--color-white);
+}
+
+.preview p {
+    color: var(--color-white);
+    font-style: italic;
+    font-size: var(--font-size-button);
+    font-family: Aleo, sans-serif;
+}
+
+.preview input {
+    width: 851px;
+    height: 95px;
+    padding-left: 41px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 16px;
+    border-color: transparent;
+    color: var(--color-red);
+    font-size: var(--font-size-button);
+    font-family: Aleo, sans-serif;
+}
+
+.preview input::placeholder {
+    color: var(--color-red);
+    font-style: italic;
+    font-size: var(--font-size-button);
+    font-family: Aleo, sans-serif;
+}
+
+.btn-preview {
+    position: absolute;
+    top: 266px;
+    left: 740px;
+}
+
+h2 {
+    font-family: RedHatText, sans-serif;
+    font-size: 40px;
+    color: var(--color-red);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.steps {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: var(--color-white);
+}
+
+.steps-items {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.step-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.steps-items p {
+    font-size: var(--font-size-main);
+    font-family: RedHatText, sans-serif;
+    color: var(--color-geen);
+}
+
+.step-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-red);
+    width: 100px;
+    height: 100px;
+    border-color: transparent;
+    border-radius: 10px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.step-img:hover {
+    background-color: var(--color-geen);
+}
+
+.step-icon {
+    background-color: var(--color-white);
+    -webkit-mask-size: cover;
+}
+
+.step-icon-1 {
+    width: 50px;
+    height: 45px;
+    -webkit-mask-image: url('../assets/img/bike.svg');
+}
+
+.step-icon-2 {
+    width: 52px;
+    height: 52px;
+    -webkit-mask-image: url('../assets/img/calendar.svg');
+}
+
+.step-icon-3 {
+    width: 60px;
+    height: 45px;
+    -webkit-mask-image: url('../assets/img/plane.svg');
+}
+
+

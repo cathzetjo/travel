@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Portal</title>
-    <link rel="icon" type="image/png" href="./assets/img/logo.png">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -12,6 +12,9 @@
 <header class="header">
     <div class="wrapper wrapper-header">
         <div class="logo">
+            <a href="">
+                <div class="logo-svg"></div>
+            </a>
             <p>Travel portal</p>
         </div>
         <nav class="nav">
@@ -22,28 +25,56 @@
                 <li class="nav-item"><a href="#stories" class="nav-link">Travel Stories</a></li>
             </ul>
         </nav>
-        <button class="btn">Login</button>
+        <button class="btn btn-login">Login</button>
     </div>
 </header>
 
 <main class="main">
-    <div class="wrapper wrapper-main">
-        <section class="preview" id="preview">
+    <section class="preview" id="preview">
+        <div class="wrapper wrapper-preview">
             <h1>Explore the beauty of the World</h1>
-            <button class="btn">Start planning</button>
-        </section>
-        <section class="steps" id="steps">
+            <p>Receive personalized recommendations for countries, hotels, activities and more</p>
+            <input type="text" placeholder="What would you like to do?"/>
+            <button class="btn btn-preview">Start planning</button>
+        </div>
+    </section>
+    <section class="steps" id="steps">
+        <div class="wrapper wrapper-steps">
             <h2>3 steps to the perfect trip</h2>
-        </section>
-        <section class="destinations" id="destinations">
+            <div class="steps-items">
+                <div class="step-item">
+                    <div class="step-img">
+                        <div class="step-icon step-icon-1"></div>
+                    </div>
+                    <p>Tell us what you want to do</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-img">
+                        <div class="step-icon step-icon-2"></div>
+                    </div>
+                    <p>Share us preferable dates</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-img">
+                        <div class="step-icon step-icon-3"></div>
+                    </div>
+                    <p>We will give you recommendations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="destinations" id="destinations">
+        <div class="wrapper wrapper-destinations">
             <h2>Popular destinations</h2>
             <button class="btn">Find more</button>
-        </section>
-        <section class="stories" id="stories">
+        </div>
+    </section>
+    <section class="stories" id="stories">
+        <div class="wrapper wrapper-stories">
             <h2>Travel stories</h2>
             <button class="btn">See more</button>
-        </section>
-    </div>
+        </div>
+    </section>
 </main>
 
 <footer class="footer">
