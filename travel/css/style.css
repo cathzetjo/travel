@@ -490,7 +490,6 @@ h2 {
 }
 
 .footer p {
-    margin-left: 9%;
     font-family: RedHatText, sans-serif;
     font-size: var(--font-size-label);
     text-transform: capitalize;
