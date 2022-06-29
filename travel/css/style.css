@@ -482,8 +482,7 @@ h2 {
     align-items: center;
     padding-top: 19px;
     padding-bottom: 8px;
-    justify-content: right;
-    gap: 23%;
+    justify-content: space-between;
 }
 
 .wrapper-footer>* {
@@ -497,6 +496,34 @@ h2 {
     text-transform: capitalize;
     color: var(--color-white);
     letter-spacing: 0.2px;
+}
+
+.contacts {
+    display: flex;
+    gap: 20px;
+    margin-left: 8.5%;
+}
+
+.contacts-icon {
+    height: 33.65px;
+    background-color: var(--color-white);
+    -webkit-mask-size: cover;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+.contacts-icon:hover {
+    background-color: var(--color-red);
+}
+
+.RSS {
+    width: 93px;
+    -webkit-mask-image: url('../assets/img/RSS-logo.svg');
+}
+
+.github {
+    width: 33.65px;
+    -webkit-mask-image: url('../assets/img/github.svg');
 }
 
 .social {
