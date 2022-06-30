@@ -115,6 +115,7 @@ html {
     transition: 1s;
     font-size: var(--font-size-button);
     text-transform: capitalize;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
 }
 
 .btn:hover {
@@ -126,6 +127,7 @@ html {
     width: 103px;
     height: 41px;
     font-size: var(--font-size-label);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
 }
 
 .btn-login:hover {
