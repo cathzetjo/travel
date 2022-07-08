@@ -1,0 +1,59 @@
+@media (max-width: 739px) {
+
+    :root {
+        --font-size-label: 11px;
+        --font-size-main: 11px;
+    }
+
+    .logo p {
+        font-size: 15px;
+    }
+
+    .nav {
+        min-width: 300px;
+    }
+
+    .btn-preview {
+        bottom: calc(100% - 254px);
+        right: 15%;
+    }
+
+    .destinations-picture {
+        width: 300px;
+        height: 300px;
+    }
+
+    .destinations-picture p {
+        bottom: 14px;
+        font-size: 22px;
+    }
+
+    .slider p {
+        width: 14px;
+        height: 14px;
+    }
+
+    .btn-destinations {
+        margin-top: 20px;
+    }
+
+    .destinations {
+        padding-bottom: 50px;
+    }
+
+    .story-img {
+        width: 206px;
+        height: 129px;
+    }
+
+    .RSS {
+        height: 21px;
+        width: 58px;
+    }
+
+    .github {
+        height: 21px;
+        width: 23px;
+    }
+
+}
