@@ -1,0 +1,10 @@
+@media (max-width: 1439px) {
+
+    .stories-background {
+        background-size: cover;
+    }
+    .wrapper-footer {
+        background-size: 437%;
+        background-position-y: 100%;
+    }
+}

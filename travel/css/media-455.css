@@ -1,0 +1,24 @@
+@media (max-width: 455px) {
+
+    .wrapper-preview {
+        background-size: 150%;
+        padding-bottom: 4%;
+    }
+    .preview p {
+        text-align: center;
+    }
+
+    h1 {
+        min-height: 60px;
+    }
+
+    .preview p {
+        min-height: 25px;
+    }
+
+    .btn-preview {
+        bottom: calc(100% - 282px);
+    }
+
+
+}

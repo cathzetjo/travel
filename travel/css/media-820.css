@@ -1,0 +1,91 @@
+@media (max-width:820px) {
+
+    :root {
+        --font-size-button: 11px;
+        --font-size-main: 14px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .wrapper-preview{
+        background-size: 120%;
+        padding-bottom: 15%;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .wrapper-header {
+        padding: 10px 0;
+    }
+
+    .logo p {
+        font-size: 20px;
+    }
+
+    .btn {
+        width: 92px;
+        height: 30px;
+    }
+
+    .nav {
+        padding: 1% 0;
+    }
+    .preview input {
+        width: 57%;
+        height: 48px;
+    }
+
+    .btn-preview {
+        bottom: calc(100% - 257px);
+        right: 15%;
+    }
+
+    .step-item {
+        gap: 19px;
+    }
+
+    .step-img {
+        width: 70px;
+        height: 70px;
+    }
+    .step-icon-1 {
+        width: 35px;
+        height: 31.5px;
+    }
+
+    .step-icon-2 {
+        width: 35px;
+        height: 35px;
+    }
+
+    .step-icon-3 {
+        width: 40px;
+        height: 30px;
+    }
+
+    h2 {
+        font-size: 23px;
+    }
+
+    .story-title {
+        font-size: 25px;
+        margin-bottom: 7px;
+    }
+
+    .story {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 13px;
+    }
+
+    .story-text {
+        text-align: center;
+    }
+
+    .story-description {
+        text-align: justify;
+    }
+
+}
