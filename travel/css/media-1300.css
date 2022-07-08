@@ -1,0 +1,78 @@
+@media (max-width: 1300px) {
+
+    :root {
+        --font-size-button: 20px;
+        --font-size-main: 18px;
+    }
+
+    .logo {
+        margin-left: 16px;
+    }
+
+    .wrapper-header {
+        gap: 2%;
+        justify-content: space-evenly;
+    }
+
+    .logo,
+    .nav {
+        margin-right: 0;
+    }
+
+    .nav {
+        min-width: 430px;
+    }
+
+    .btn-login {
+        margin-right: 16px;
+    }
+
+    .nav-list {
+        gap: 4%;
+    }
+
+    .nav-item {
+        flex-shrink: 0;
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+
+    .wrapper-preview > * {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .preview input {
+        width: 66%;
+    }
+
+    .btn-preview {
+        bottom: 43.5%;
+        right: 22%;
+    }
+
+    .destinations-items {
+        justify-content: center;
+    }
+
+    .destinations-picture {
+        background-size: 100%;
+        width: 400px;
+        height: 400px;
+        flex-shrink: 0;
+        background-repeat: no-repeat;
+    }
+
+    .stories-items {
+        padding: 15px;
+    }
+
+    .story-img {
+        width: 308px;
+        height: 193px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+}
