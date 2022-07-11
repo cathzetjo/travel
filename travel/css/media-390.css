@@ -1,5 +1,263 @@
 @media (max-width: 390px) {
 
+    :root {
+        --font-size-main: 10px;
+    }
 
+    .wrapper-header {
+        display: none;
+    }
 
+    .header-mobile {
+        display: flex;
+        margin: 45px 16px;
+    }
+
+    .wrapper-preview {
+        background: url(../assets/img/mobile/garrett-parker-small.jpg);
+        padding-top: 129px;
+        padding-bottom: 61px;
+    }
+
+    h1,
+    .preview p {
+        display: none;
+    }
+
+    .preview input {
+        width: 87%;
+        height: 42px;
+        padding-left: 14px;
+        letter-spacing: -0.4px;
+    }
+
+    .preview input::placeholder {
+        font-size: 14px;
+    }
+
+    .btn-preview {
+        right: 1.1%;
+        bottom: calc(100% - 181px);
+    }
+
+    h2 {
+        font-size: 13.3px;
+        margin-bottom: 0;
+    }
+
+    .steps {
+        padding-top: 21px;
+        padding-bottom: 23px;
+    }
+
+    .steps h2 {
+        margin-bottom: 24px;
+    }
+
+    .steps-items .step-item:first-child {
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .steps-items .step-item:last-child {
+        text-align: right;
+        align-items: flex-end;
+    }
+
+    .steps-items .step-item:nth-child(2) {
+        margin-right: 0;
+    }
+
+    .steps-items {
+        margin: 0 4%;
+        gap: 0;
+        justify-content: space-between;
+    }
+
+    .steps-items p {
+        width: 90px;
+    }
+
+    .steps-items .step-item:nth-child(2) p {
+        width: 115px;
+    }
+
+    .destinations {
+        padding-bottom: 21px;
+    }
+
+    .destinations-picture {
+        width: 92.5%;
+        height: 210px;
+    }
+
+    .destinations-picture-1 {
+        background: url('../assets/img/mobile/Spain-small.jpg');
+        background-position-x: unset;
+    }
+
+    .destinations-picture-2 {
+        background: url('../assets/img/mobile/Japan-small.jpg');
+        flex-shrink: unset;
+        display: none;
+    }
+
+    .destinations-picture-3 {
+        background: url('../assets/img/mobile/USA-small.jpg');
+        display: none;
+    }
+
+    .destinations-picture-1 p {
+        display: unset;
+    }
+
+    .destinations h2 {
+        margin-bottom: 21px;
+    }
+
+    .destinations-picture p {
+        font-size: 20px;
+        top: 10px;
+    }
+
+    .slider {
+        position: absolute;
+        left: 45%;
+        top: 79%;
+        margin: 0;
+        gap: 6px;
+    }
+
+    .slider p {
+        width: 8px;
+        height: 8px;
+    }
+
+    .controls {
+        position: absolute;
+        display: flex;
+        left: 7.7%;
+        top: 67.6%;
+        width: 86.1%;
+        justify-content: space-between;
+    }
+
+    .controls .arrow {
+        width: 13.5px;
+        height: 25px;
+        -webkit-mask-size: cover;
+        transition: 0.7s;
+        cursor: pointer;
+        background-color: var(--color-red);
+    }
+
+    .controls .arrow-left {
+        -webkit-mask-image: url('../assets/img/mobile/arrow-l.svg');
+    }
+
+    .controls .arrow-right {
+        -webkit-mask-image: url('../assets/img/mobile/arrow-r.svg');
+        cursor: auto;
+    }
+
+    .controls .arrow-right:hover {
+        -webkit-mask-image: url('../assets/img/mobile/arrow-r.svg');
+        background-color: var(--color-green);
+    }
+
+    .btn-destinations {
+        margin-top: 10px;
+    }
+
+    .arrow {
+        margin-right: 3px;
+        margin-left: -4px;
+    }
+
+    .stories-background {
+        background: url(../assets/img/mobile/stories_small.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .stories h2 {
+        margin-bottom: 13px;
+    }
+
+    .story-img {
+        width: 155px;
+        height: 130px;
+    }
+
+    .story {
+        flex-wrap: nowrap;
+        margin-top: 10px;
+        gap: 9px;
+    }
+
+    .stories-items {
+        padding: 0 15px 13px 15px;
+        gap: 5px;
+    }
+
+    .story-text {
+        text-align: left;
+    }
+
+    .story-title {
+        font-size: 11px;
+        margin-top: 5px;
+        margin-bottom: 12px;
+        font-weight: bold;
+        letter-spacing: 0.2px;
+    }
+
+    .story-description-mobile {
+        display: block;
+        font-size: 9px;
+        line-height: 11px;
+    }
+
+    .story-img-1 {
+        background: url(../assets/img/mobile/boat-small.jpg);
+    }
+
+    .story-img-2 {
+        background: url(../assets/img/mobile/road-small.jpg);
+    }
+
+    .story-img-3 {
+        background: url(../assets/img/mobile/mountains-small.jpg);
+    }
+
+    .story-img-4 {
+        background: url(../assets/img/mobile/car-small.jpg);
+    }
+
+    .story-description {
+        display: none;
+    }
+
+    .btn-stories {
+        margin-top: 5px;
+    }
+
+    .wrapper-footer {
+        background: url(../assets/img/mobile/stories_small.jpg);
+        background-position-y: bottom;
+    }
+
+    .contacts {
+        display: none;
+    }
+
+    .footer p {
+        display: none;
+    }
+
+    .social {
+        gap: 20px;
+        margin-left: 2.4%;
+        margin-right: 0;
+    }
 }
