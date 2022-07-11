@@ -245,6 +245,7 @@
     .wrapper-footer {
         background: url(../assets/img/mobile/stories_small.jpg);
         background-position-y: bottom;
+        padding-bottom: 18px;
     }
 
     .contacts {
