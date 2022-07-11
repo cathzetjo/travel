@@ -348,7 +348,6 @@ h2 {
     border-radius: 50%;
     background-color: rgba(242, 120, 92, 0.5);
     transition: 1s;
-
 }
 
 .slider p:hover {
@@ -486,7 +485,7 @@ h2 {
     justify-content: space-between;
 }
 
-.wrapper-footer>* {
+.wrapper-footer > * {
     margin-top: -5px;
 }
 
@@ -555,4 +554,12 @@ h2 {
 
 .twitter {
     -webkit-mask-image: url('../assets/img/twitter.svg');
+}
+
+.header-mobile {
+    display: none;
+}
+
+.story-description-mobile {
+    display: none;
 }
