@@ -59,10 +59,15 @@
     transition: transform 0.4s;
 }
 
+.change .line {
+    width: 21.25px;
+    height: 2px;
+}
+
 .change .line1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    -webkit-transform: rotate(-45deg) translate(-3px, 4px);
     transform: rotate(-45deg) translate(-3px, 4px);
-    margin-right: calc(100vw - 284px);
+    margin-right: 7em;
     margin-top: -35px;
 }
 
@@ -71,6 +76,6 @@
 }
 
 .change .line3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-6px, -8px);
+    -webkit-transform: rotate(45deg) translate(-4px, -6px);
+    transform: rotate(45deg) translate(-4px, -6px);
 }
