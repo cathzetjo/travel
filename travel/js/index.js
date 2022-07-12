@@ -1,3 +1,7 @@
+import burgerMenu from './burger.js';
+
+burgerMenu();
+
 window.addEventListener('resize', function () {
     activeSliderChange()
 });
@@ -20,3 +24,4 @@ function activeSliderChange() {
         firstSlide.classList.remove('active')
     }
 }
+
