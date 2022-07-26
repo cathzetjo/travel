@@ -97,6 +97,7 @@
     .destinations-picture-1 {
         background: url('../assets/img/mobile/Spain-small.jpg');
         background-position-x: unset;
+        display: block;
     }
 
     .destinations-picture-2 {
@@ -152,19 +153,18 @@
         transition: 0.7s;
         cursor: pointer;
         background-color: var(--color-red);
+        -webkit-mask-image: url('../assets/img/mobile/arrow-r.svg');
     }
 
     .controls .arrow-left {
-        -webkit-mask-image: url('../assets/img/mobile/arrow-l.svg');
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg);
     }
 
-    .controls .arrow-right {
-        -webkit-mask-image: url('../assets/img/mobile/arrow-r.svg');
-        cursor: auto;
-    }
-
-    .controls .arrow-right:hover {
-        -webkit-mask-image: url('../assets/img/mobile/arrow-r.svg');
+    .controls .arrow:hover {
         background-color: var(--color-green);
     }
 
