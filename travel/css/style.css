@@ -307,20 +307,26 @@ h2 {
     -webkit-background-size: 100%;
     -o-background-size: 100%;
     background-size: 100%;
+    transition: flex-shrink 0.6s;
 }
 
 .destinations-picture-1 {
     background: url('../assets/img/Spain.jpg');
     background-position-x: right;
+    order: 1;
+    cursor: pointer;
 }
 
 .destinations-picture-2 {
     background: url('../assets/img/Japan.jpg');
     flex-shrink: 0;
+    order: 2;
 }
 
 .destinations-picture-3 {
     background: url('../assets/img/USA.jpg');
+    order: 3;
+    cursor: pointer;
 }
 
 .destinations-picture p {
@@ -350,11 +356,6 @@ h2 {
     border-radius: 50%;
     background-color: rgba(242, 120, 92, 0.5);
     transition: 1s;
-}
-
-.slider p:hover {
-    background-color: var(--color-red);
-    cursor: pointer;
 }
 
 .slider p.active {
