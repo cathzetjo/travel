@@ -7,25 +7,28 @@ burgerMenu();
 carouselMobile();
 
 window.addEventListener('resize', function () {
-    activeSliderChange()
+    sliderSwitch()
 });
 
 window.addEventListener('load', function () {
-    activeSliderChange()
+    sliderSwitch();
 });
 
-function activeSliderChange() {
-    if (window.innerWidth <= 390) {
-        let firstSlide = document.querySelector('.slider p:first-child');
-        let middleSlide = document.querySelector('.slider p:nth-child(2)');
-        firstSlide.classList.add('active');
-        middleSlide.classList.remove('active')
+function sliderSwitch() {
+
+    const sliderItems = document.querySelectorAll(".slider-item");
+
+    if (window.innerWidth < 391) {
+        sliderItems[0].classList.add('active');
+        sliderItems[1].classList.remove('active');
+        sliderItems[2].classList.remove('active');
+        carouselMobile();
     }
     if (window.innerWidth > 390) {
-        let firstSlide = document.querySelector('.slider p:first-child');
-        let middleSlide = document.querySelector('.slider p:nth-child(2)');
-        middleSlide.classList.add('active');
-        firstSlide.classList.remove('active')
+        sliderItems[1].classList.add('active');
+        sliderItems[0].classList.remove('active');
+        sliderItems[2].classList.remove('active');
+        carouselDesktop();
     }
 }
 
