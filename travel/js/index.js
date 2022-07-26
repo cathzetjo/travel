@@ -1,6 +1,10 @@
+import carouselDesktop from './carousel-desktop.js';
 import burgerMenu from './burger.js';
+import carouselMobile from './carousel-mobile.js';
 
+carouselDesktop();
 burgerMenu();
+carouselMobile();
 
 window.addEventListener('resize', function () {
     activeSliderChange()
