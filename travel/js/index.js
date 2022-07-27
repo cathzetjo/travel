@@ -1,10 +1,12 @@
 import carouselDesktop from './carousel-desktop.js';
 import burgerMenu from './burger.js';
 import carouselMobile from './carousel-mobile.js';
+import singIn from './singin.js';
 
 carouselDesktop();
 burgerMenu();
 carouselMobile();
+singIn();
 
 window.addEventListener('resize', function () {
     sliderSwitch()
