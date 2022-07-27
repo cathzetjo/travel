@@ -88,4 +88,18 @@
         text-align: justify;
     }
 
+    .login-btn {
+        width: 230px;
+        height: 40px;
+    }
+
+    .login-menu input {
+        width: 210px;
+        height: 40px;
+    }
+
+    .login-title {
+        font-size: 20px;
+    }
+
 }

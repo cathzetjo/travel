@@ -48,7 +48,8 @@
                     <li class="nav-item-mobile"><a href="#steps" class="nav-link-mobile">Plan Your Trip</a></li>
                     <li class="nav-item-mobile"><a href="#destinations" class="nav-link-mobile">Destinations</a></li>
                     <li class="nav-item-mobile"><a href="#stories" class="nav-link-mobile">Travel Stories</a></li>
-                    <li class="nav-item-mobile"><a href="#" class="nav-link-mobile" onclick="return false;">Account</a></li>
+                    <li class="nav-item-mobile"><a href="#" class="nav-link-mobile nav-link-mobile-account" onclick="return false;">Account</a>
+                    </li>
                     <li class="nav-item-mobile"><a href="#social" class="nav-link-mobile">Social Media</a></li>
                 </ul>
             </nav>
@@ -59,6 +60,33 @@
                     <div class="line line3"></div>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="login-menu" id="login-menu">
+        <p class="login-title">Log in to your account</p>
+        <div class="login-active-account">
+            <button class="login-btn login-btn-facebook">
+                <img src="./assets/img/facebook.svg" alt="facebook" class="login-btn-icon"/>Sign In with Facebook
+            </button>
+            <button class="login-btn login-btn-google">
+                <img src="./assets/img/google.svg" alt="google" class="login-btn-icon"/>Sign In with Google
+            </button>
+            <p class="or">or</p>
+        </div>
+        <label for="email">E-mail</label>
+        <br/>
+        <input type="email" id="email"/>
+        <br/>
+        <label for="password">Password</label>
+        <br/>
+        <input type="text" id="password"/>
+        <button class="login-btn login-btn-sign">Sign In</button>
+        <p class="password-forgot">Forgot Your Password?</p>
+        <hr class="login-hr login-hr-footer">
+        <div class="account">
+            <div class="dont-have-acc">Don’t have an account ?</div>
+            <div class="account-btn register-btn-modal">Register</div>
+            <div class="account-btn login-btn-modal">Log In</div>
         </div>
     </div>
 </header>

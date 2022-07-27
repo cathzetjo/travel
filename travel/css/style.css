@@ -566,3 +566,203 @@ h2 {
 .story-description-mobile {
     display: none;
 }
+
+.login-menu {
+    width: 561px;
+    position: absolute;
+    padding: 25px 45px;
+    background: linear-gradient(177.09deg, #FFFFFF 6.15%, #0D606F 202.69%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    top: -1000px;
+    left: 28%;
+    transition: all 0.8s ease-out;
+}
+
+.show {
+    top: 0;
+}
+
+.login-title {
+    margin-bottom: 30px;
+    font-family: var(--font-main);
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: var(--color-green);
+    text-align: center;
+}
+
+.login-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 560px;
+    height: 56px;
+    font-family: var(--font-title);
+    font-size: var(--font-size-main);
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    border: 1px solid transparent;
+    color: var(--color-white);
+    cursor: pointer;
+    transition: 1s;
+    gap: 15.5px;
+}
+
+.login-btn-facebook {
+    background: #1877F2;
+}
+
+.login-btn-facebook:hover {
+    background-color: var(--color-red);
+}
+
+.login-btn-google {
+    background: var(--color-white);
+    color: var(--color-green);
+}
+
+.login-btn-google:hover {
+    background-color: var(--color-red);
+    color: var(--color-white);
+}
+
+.login-btn-icon {
+    width: 23px;
+    height: 23px;
+}
+
+.or {
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: var(--font-main);
+    font-weight: 700;
+    font-size: var(--font-size-main);
+    line-height: 24px;
+    color: rgba(13, 96, 111, 0.5);
+
+}
+
+.or:after {
+    content: '';
+    width: 50%;
+    border-bottom: 1px solid rgba(13, 96, 111, 0.5);
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+.or:before {
+    content: '';
+    width: 47%;
+    border-bottom: 1px solid rgba(13, 96, 111, 0.5);
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+.or:after {
+    content: '';
+    width: 47%;
+    border-bottom: 1px solid rgba(13, 96, 111, 0.5);
+    position: absolute;
+    left: 53.5%;
+    top: 50%;
+}
+
+.login-hr {
+    margin-top: 23px;
+    height: 0px;
+    border: 1px solid rgba(13, 96, 111, 0.5);
+}
+
+.login-menu label {
+    font-family: var(--font-main);
+    font-size: var(--font-size-label);
+    line-height: 19px;
+    color: var(--color-green);
+}
+
+.login-menu input {
+    margin-top: 4px;
+    margin-bottom: 19px;
+    padding-left: 20px;
+    width: 540px;
+    height: 54px;
+    background: var(--color-white);
+    box-shadow: inset 0px 0px 3px rgba(13, 96, 111, 0.08), inset 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border: none;
+    border-radius: 10px;
+    color: var(--color-green);
+    font-size: var(--font-size-label);
+}
+
+.login-btn-sign {
+    background: var(--color-green);
+    font-family: var(--font-title);
+    font-size: var(--font-size-main);
+    line-height: 26px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.login-btn-sign:hover {
+    background-color: var(--color-red);
+}
+
+.password-forgot {
+    font-family: var(--font-main);
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    text-decoration-line: underline;
+    color: var(--color-green);
+    text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.16);
+    text-align: center;
+    letter-spacing: 0.2px;
+}
+
+.account {
+    display: flex;
+    justify-content: center;
+    margin-top: 22px;
+}
+
+.dont-have-acc {
+    margin-bottom: -4px;
+    font-family: var(--font-main);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: rgba(13, 96, 111, 0.5);
+    text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.16);
+    text-align: center;
+}
+
+.account-btn {
+    margin-left: 4px;
+    font-family: var(--font-main);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: var(--color-green);
+    text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.16);
+    text-align: center;
+    text-decoration-line: underline;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.account-btn:hover {
+    color: var(--color-red);
+}
+
+.login-btn-modal {
+    display: none;
+}
