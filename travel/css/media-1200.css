@@ -1,0 +1,32 @@
+@media (max-width: 1200px) {
+
+    .wrapper-preview{
+             padding-bottom: 10%;
+         }
+
+    .btn-preview {
+        bottom: calc(100% - 352px)
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .steps {
+        padding-top: 40px;
+        padding-bottom: 80px;
+    }
+
+    .steps-items {
+        justify-content: space-evenly;
+        margin: 0 2%;
+    }
+
+    .step-item {
+        text-align: center;
+    }
+    .story-title {
+        font-size: 28px;
+    }
+
+}

@@ -1,0 +1,36 @@
+@media (max-width: 380px) {
+
+    .story {
+        flex-wrap: wrap;
+        margin-top: 10px;
+        gap: 15px;
+    }
+
+    .stories-items {
+        padding: 0 15px 13px 15px;
+    }
+
+    .story-text {
+        text-align: justify;
+    }
+
+    .wrapper-footer {
+        background: url(../assets/img/mobile/stories_small.jpg);
+        background-position-y: bottom;
+        background-size: 690%;
+    }
+
+    .story-title {
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    .stories-items {
+        padding: 15px 30px;
+    }
+
+    .story {
+        gap: 4px;
+    }
+
+}
